@@ -71,7 +71,7 @@ const data: any[] = [
   },
 ];
 
-export default function page() {
+export default function Page() {
   return (
     <div className="mt-5">
       <div className="flex items-center">

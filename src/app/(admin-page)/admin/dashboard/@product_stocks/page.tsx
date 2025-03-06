@@ -1,6 +1,6 @@
 import { Tooltip } from "flowbite-react";
 import { FaBox } from "react-icons/fa";
-export default function page() {
+export default function Page() {
   const years: string[] = ["2024", "2023", "2022", "2021"];
   const stocks_colors: any[] = [
     { stock_count_min: 1, stock_count_max: 50, color: "#00bbcc" },

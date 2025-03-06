@@ -12,7 +12,7 @@ interface StatusIF {
   price: number;
   freebies: string;
 }
-export default function page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string } }) {
   const [isEdit, setIsEdit] = useState(false);
   const [sizeArr, setSizeArr] = useState<String[]>(["XS", "S", "M", "L", "XL"]);
   const [statusArr, setStatusArr] = useState<StatusIF[]>([

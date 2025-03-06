@@ -95,7 +95,7 @@ const renderActiveShape = (props: any) => {
   );
 };
 
-export default function page() {
+export default function Page() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const onPieEnter = (_: any, index: any) => {

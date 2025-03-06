@@ -12,7 +12,7 @@ import Image from "next/image";
 
 import { Badge } from "flowbite-react";
 import { HiCheck, HiClock } from "react-icons/hi";
-export default function page() {
+export default function Page() {
   return (
     <div className="flex flex-col pl-3 pr-3 pt-2 bg-teal-50 rounded">
       <div className="flex justify-between items-center">

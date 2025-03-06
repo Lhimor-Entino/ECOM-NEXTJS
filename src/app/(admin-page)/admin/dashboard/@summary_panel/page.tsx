@@ -9,7 +9,7 @@ import { HiMiniArrowTrendingUp } from "react-icons/hi2";
 import { BsCashCoin } from "react-icons/bs";
 import { HiMiniArrowTrendingDown } from "react-icons/hi2";
 import { BsCartCheckFill } from "react-icons/bs";
-export default function page() {
+export default function Page() {
   return (
     <div className="grid grid-cols-1 grid-flow-col sm:grid-cols-3 gap-3">
       {/* <div

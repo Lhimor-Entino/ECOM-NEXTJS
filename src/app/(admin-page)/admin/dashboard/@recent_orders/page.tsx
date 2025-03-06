@@ -58,7 +58,7 @@ const orders: Order[] = [
   },
 ];
 
-export default function page() {
+export default function Page() {
   const getStatusColor = (status: string) => {
     if (status == "0") {
       return "text-blue-600";

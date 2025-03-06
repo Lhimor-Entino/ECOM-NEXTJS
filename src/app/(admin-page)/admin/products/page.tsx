@@ -23,7 +23,7 @@ import {
 import { Button } from "flowbite-react";
 import { HiOutlineArrowRight, HiShoppingCart } from "react-icons/hi";
 import Link from "next/link";
-export default function page() {
+export default function Page() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const onPageChange = (page: number) => setCurrentPage(page);

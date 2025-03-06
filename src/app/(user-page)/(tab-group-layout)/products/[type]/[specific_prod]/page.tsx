@@ -62,14 +62,14 @@ export default function SpecificProductPage({
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-2 place-items-center">
               {product_data.length > 0
                 ? product_data?.map((pd, index) =>
-                    pd?.product_name.toLowerCase() === params.specific_prod ? (
-                      <Link key={pd?.id} href={`${pathName + "/" + pd?.id}`}>
-                        <ProductCard info={pd} link="" />
-                      </Link>
-                    ) : (
-                      ""
-                    )
+                  pd?.product_name.toLowerCase() === params.specific_prod ? (
+                    <Link key={pd?.id} href={`${pathName + "/" + pd?.id}`}>
+                      <ProductCard info={pd} />
+                    </Link>
+                  ) : (
+                    ""
                   )
+                )
                 : ""}
             </div>
           </div>

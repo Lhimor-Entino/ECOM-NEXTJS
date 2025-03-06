@@ -10,7 +10,7 @@ const ProductPage = () => {
           <ProductCard
             info={pd}
             key={index}
-            link={`/products/${pd.productType.toLowerCase()}/${pd.product_name.toLowerCase()}/${pd.id}`}
+          // link={`/products/${pd.productType.toLowerCase()}/${pd.product_name.toLowerCase()}/${pd.id}`}
           />
         ))
         : ""}

@@ -34,7 +34,7 @@ const ProductTypePage = ({ params }: { params: { type?: string } }) => {
               pd?.productType.toLowerCase() === params.type ? (
                 <ProductCard
                   info={pd}
-                  link={pd.product_name.toLowerCase() + "/" + pd?.id}
+                  // link={pd.product_name.toLowerCase() + "/" + pd?.id}
                   key={index}
                 />
               ) : null

@@ -72,14 +72,13 @@ export default function page({ params }: { params: { id: string } }) {
               <div className="grid grid-cols-5 w-3/4 ">
                 {sizeArr.map((size, index) => (
                   <div
-                    className={`mt-3  w-8 h-8 rounded-md flex items-center justify-center mr-1 ${
-                      index == 2 ? "bg-teal-600" : "bg-teal-100"
-                    }`}
+                    key={index}
+                    className={`mt-3  w-8 h-8 rounded-md flex items-center justify-center mr-1 ${index == 2 ? "bg-teal-600" : "bg-teal-100"
+                      }`}
                   >
                     <p
-                      className={`text-xs  ${
-                        index == 2 ? "text-white" : "text-teal-700"
-                      }`}
+                      className={`text-xs  ${index == 2 ? "text-white" : "text-teal-700"
+                        }`}
                     >
                       {size}
                     </p>
@@ -94,7 +93,7 @@ export default function page({ params }: { params: { id: string } }) {
               </p>
               <div className="grid grid-cols-5 gap-2">
                 {statusArr.map((status, index) => (
-                  <div className=" w-full mt-2">
+                  <div key={index} className=" w-full mt-2">
                     <FormGroup className=" w-28">
                       <FormControlLabel
                         className=" w-full"

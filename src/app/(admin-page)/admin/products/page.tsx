@@ -120,7 +120,7 @@ export default function page() {
           </TableHead>
           <TableBody className="divide-y">
             {product_data.map((dt, index) => (
-              <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
+              <TableRow key={index} className="bg-white dark:border-gray-700 dark:bg-gray-800">
                 <TableCell className="p-4">
                   <Checkbox />
                 </TableCell>

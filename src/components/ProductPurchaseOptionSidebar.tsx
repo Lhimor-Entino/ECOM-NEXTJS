@@ -103,12 +103,11 @@ export default function ProductPurchaseOptionSidebar({
       <ListGroup className="w-{full outline-none border-none">
         {optionList.map((option, index) =>
           product_name === option.product_name.toLowerCase() ? (
-            <Link href={"#"}>
+            <Link key={index} href={"#"}>
               <ListGroup.Item
                 icon={option.icon || undefined}
-                className={`text-xs mt-2  ${
-                  pathName.includes("#") ? active : not_active
-                }`}
+                className={`text-xs mt-2  ${pathName.includes("#") ? active : not_active
+                  }`}
               >
                 <Tooltip
                   content={option.sell_info}

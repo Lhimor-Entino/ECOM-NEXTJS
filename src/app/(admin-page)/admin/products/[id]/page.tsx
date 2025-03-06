@@ -148,7 +148,7 @@ export default function Page({ params }: { params: { id: string } }) {
                     Discount Type
                   </p>
                   <p className="bg-teal-50 text-teal-800 text-xs p-3 mt-2 font-normal rounded-lg">
-                    Mother's Day
+                    Valentines Day
                   </p>
                 </div>
               </div>

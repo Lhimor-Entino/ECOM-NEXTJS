@@ -82,7 +82,7 @@ export default function CartPage() {
           <Table hoverable className="drop-shadow-none">
             <Table.Body>
               {cartItems.map((item, index) => (
-                <Table.Row className="bg-white  dark:border-gray-700 dark:bg-gray-800 hover:bg-teal-50">
+                <Table.Row key={index} className="bg-white  dark:border-gray-700 dark:bg-gray-800 hover:bg-teal-50">
                   <Table.Cell className="p-4">
                     <Checkbox
                       className="rounded"

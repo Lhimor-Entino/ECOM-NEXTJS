@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Skeleton from "@mui/material/Skeleton";
+import Image from "next/image";
 
 interface MediaProps {
   loading?: boolean;
@@ -47,7 +48,7 @@ function Media(props: MediaProps) {
       {(loading ? Array.from(new Array(4)) : data).map((item, index) => (
         <Box key={index} sx={{ marginRight: 0.5, my: 0 }}>
           {item ? (
-            <img
+            <Image
               style={{ width: 210, height: 118 }}
               alt={item.title}
               src={item.src}

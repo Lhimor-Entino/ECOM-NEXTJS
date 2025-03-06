@@ -103,7 +103,7 @@ export default function ProductsSidebar() {
     } else {
       setProductList(seafoodList);
     }
-  }, [pathName]);
+  }, [pathName, poultryList, seafoodList]);
 
   return (
     <div>
@@ -112,9 +112,8 @@ export default function ProductsSidebar() {
           <Link href={product.link} key={index}>
             <ListGroup.Item
               icon={product.icon || undefined}
-              className={`text-xs mt-2  ${
-                pathName.includes(product.link) ? active : not_active
-              }`}
+              className={`text-xs mt-2  ${pathName.includes(product.link) ? active : not_active
+                }`}
             >
               <Tooltip
                 content={product.sell_info}

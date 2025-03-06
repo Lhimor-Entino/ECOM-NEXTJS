@@ -1,5 +1,5 @@
 "use client";
-import { SVGProps } from "react";
+import { SVGProps, useMemo } from "react";
 import { ListGroup } from "flowbite-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -41,60 +41,69 @@ interface ProductObject {
 export default function ProductsSidebar() {
   const pathName = usePathname();
 
-  const seafoodList: ProductObject[] = [
-    {
-      product: "Bangus",
-      quantity: 150,
-      sell_info: "Per kilo (5 kg min) / Per bundle",
-      link: "/products/seafoods/bangus",
-      icon: GiDoubleFish,
-    },
-    {
-      product: "Tilapia",
-      quantity: 100,
-      sell_info: "Per kilo  / Per bundle",
-      link: "/products/seafoods/tilapia",
-      icon: FaFish,
-    },
-    {
-      product: "Alimasag",
-      quantity: 90,
-      sell_info: "Per kilo  / Per bundle",
-      link: "/products/seafoods/alimasag",
-      icon: GiSadCrab,
-    },
-    {
-      product: "Sugpo",
-      quantity: 200,
-      sell_info: "Per kilo  / Per bundle",
-      link: "/products/seafoods/sugpo",
-      icon: GiShrimp,
-    },
-  ];
-  const poultryList: ProductObject[] = [
-    {
-      product: "Eggs",
-      quantity: 129,
-      sell_info: "Per Tray / 1/2 Tray",
-      link: "/products/poultry/eggs",
-      icon: FaEgg,
-    },
-    {
-      product: "RTL",
-      quantity: 201,
-      sell_info: "Min purchase 10",
-      link: "/products/poultry/rtl",
-      icon: GiChicken,
-    },
-    {
-      product: "For Consume",
-      quantity: 100,
-      sell_info: "Per kilo",
-      link: "/products/poultry/consumeable",
-      icon: GiRoastChicken,
-    },
-  ];
+  const seafoodList: ProductObject[] = useMemo(
+    () =>
+      [
+        {
+          product: "Bangus",
+          quantity: 150,
+          sell_info: "Per kilo (5 kg min) / Per bundle",
+          link: "/products/seafoods/bangus",
+          icon: GiDoubleFish,
+        },
+        {
+          product: "Tilapia",
+          quantity: 100,
+          sell_info: "Per kilo  / Per bundle",
+          link: "/products/seafoods/tilapia",
+          icon: FaFish,
+        },
+        {
+          product: "Alimasag",
+          quantity: 90,
+          sell_info: "Per kilo  / Per bundle",
+          link: "/products/seafoods/alimasag",
+          icon: GiSadCrab,
+        },
+        {
+          product: "Sugpo",
+          quantity: 200,
+          sell_info: "Per kilo  / Per bundle",
+          link: "/products/seafoods/sugpo",
+          icon: GiShrimp,
+        },
+      ],
+    []
+  );
 
+  const poultryList: ProductObject[] = useMemo(
+    () =>
+      [
+        {
+          product: "Eggs",
+          quantity: 129,
+          sell_info: "Per Tray / 1/2 Tray",
+          link: "/products/poultry/eggs",
+          icon: FaEgg,
+        },
+        {
+          product: "RTL",
+          quantity: 201,
+          sell_info: "Min purchase 10",
+          link: "/products/poultry/rtl",
+          icon: GiChicken,
+        },
+        {
+          product: "For Consume",
+          quantity: 100,
+          sell_info: "Per kilo",
+          link: "/products/poultry/consumeable",
+          icon: GiRoastChicken,
+        },
+      ]
+    ,
+    []
+  );
   const [productList, setProductList] = useState<ProductObject[]>([]);
 
   useEffect(() => {
@@ -103,7 +112,7 @@ export default function ProductsSidebar() {
     } else {
       setProductList(seafoodList);
     }
-  }, [pathName, poultryList, seafoodList]);
+  }, [pathName]);
 
   return (
     <div>

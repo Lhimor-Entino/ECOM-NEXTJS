@@ -10,7 +10,7 @@ import DirectionsIcon from "@mui/icons-material/Directions";
 import { Pagination } from "flowbite-react";
 import { useState } from "react";
 import { Label, Select } from "flowbite-react";
-import { product_data } from "@/data/product";
+import product_data from "@/data/product";
 import {
   Checkbox,
   Table,

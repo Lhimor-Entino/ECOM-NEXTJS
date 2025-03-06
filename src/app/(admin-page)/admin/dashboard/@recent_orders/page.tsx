@@ -1,6 +1,6 @@
 "use client";
 import { Checkbox, Table } from "flowbite-react";
-import { product_data } from "@/data/product";
+import product_data from "@/data/product";
 import Image from "next/image";
 import { Badge } from "flowbite-react";
 import { HiCheck, HiClock } from "react-icons/hi";

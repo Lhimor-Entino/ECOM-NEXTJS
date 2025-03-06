@@ -1,7 +1,7 @@
 "use client";
 import ProductCard from "@/components/ProductCard"; // Without curly braces
 
-import { product_data } from "@/data/product";
+import product_data from "@/data/product";
 
 export default function ProductPage() {
   return (

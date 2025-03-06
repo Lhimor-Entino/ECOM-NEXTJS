@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "flowbite-react";
 import Link from "next/link";
-import { product_data } from "@/data/product";
+import product_data from "@/data/product";
 import Image from "next/image";
 
 import { Badge } from "flowbite-react";

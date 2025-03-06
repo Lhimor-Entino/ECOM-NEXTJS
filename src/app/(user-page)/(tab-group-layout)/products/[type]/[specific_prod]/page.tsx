@@ -1,7 +1,7 @@
 "use client";
 import { notFound } from "next/navigation";
-import { product_data } from "@/data/product";
-import ProductCard from "@/components/ProductCard";
+import product_data from "@/data/product";
+
 import { HiEye, HiInformationCircle } from "react-icons/hi";
 import { Alert } from "flowbite-react";
 import { Button } from "flowbite-react";
@@ -11,6 +11,8 @@ import { Suspense } from "react";
 import ProductLoadingSkeleton from "@/components/ProductLoadingSkeleton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ProductCard from "@/components/ProductCard";
+
 export default function SpecificProductPage({
   params,
 }: {

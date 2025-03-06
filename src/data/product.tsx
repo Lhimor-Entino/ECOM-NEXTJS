@@ -3,7 +3,7 @@
 // FOR POULTRY (SIZE  - 1 is xs | 2 is small | 3 is meduim |  4 is large | 5 is xl )
 // FOR SEAFOODS (SIZE  - 1 (3 pieces for 1 kilo) is meduim | 2  (2 pieces per kilo )is large | 3 (1 piece is 3/4 + 1 to complete is kilo ) is xl | 4 (bundle of fish)  )
 
-export const product_data: any[] = [
+const product_data: any[] = [
   //POULTRY
   {
     id: "1",
@@ -158,3 +158,5 @@ export const product_data: any[] = [
     stock: 252,
   },
 ];
+
+export default product_data;

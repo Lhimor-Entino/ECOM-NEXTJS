@@ -1,7 +1,7 @@
 "use client";
 import { notFound } from "next/navigation";
 import { product_data } from "@/data/product";
-import { ProductCard } from "@/components/ProductCard";
+import ProductCard from "@/components/ProductCard";
 import { HiEye, HiInformationCircle } from "react-icons/hi";
 import { Alert } from "flowbite-react";
 import { Button } from "flowbite-react";

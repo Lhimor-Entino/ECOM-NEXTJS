@@ -25,7 +25,7 @@ interface Props {
   purchase_option: number;
 }
 
-export function ProductCard({ info }: { info: Props }) {
+export default function ProductCard({ info }: { info: Props }) {
   const dispatch = useDispatch<AppDispatch>();
   const cartItems = useAppSelector((state) => state.cartSlice);
   const getSize = (size: number, product_type: string) => {

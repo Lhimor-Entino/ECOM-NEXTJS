@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { product_data } from "@/data/product";
-import { ProductCard } from "@/components/ProductCard";
+import ProductCard from "@/components/ProductCard";
 import ProductsSidebar from "@/components/ProductsSidebar";
 
 // DYNAMIC METADATA
